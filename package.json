@@ -2,9 +2,11 @@
   "name": "demo",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://trajano.github.io/cra-demo",
+  "homepage": "https://trajano.github.io/cra-demo",
   "dependencies": {
+    "bootstrap": "3",
     "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
