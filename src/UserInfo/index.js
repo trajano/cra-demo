@@ -11,17 +11,14 @@ export default class UserInfo extends Component {
       user: {}
     }
   }
-  componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users/" + this.props.id)
-      .then((response) => {
-        response.json().then(user => {
-          this.setState({ user })
-        })
-      })
+  async componentDidMount() {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users/" + this.props.id)
+    const user = await response.json()
+    this.setState({ user })
   }
   render() {
     return (
-         <Alert color="info">Hello {this.state.user.name}</Alert>
+      <Alert color="info">Hello {this.state.user.name}</Alert>
     )
   }
 }
