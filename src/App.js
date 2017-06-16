@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header'
 import UserInfo from './UserInfo'
+import Post from './Post'
 import { Grid, Row, Col } from 'react-bootstrap'
 
 class App extends Component {
@@ -17,6 +18,11 @@ class App extends Component {
           <Row>
             <Col xs={12}>
               <UserInfo id={1} />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12}>
+              <Post id={3} />
             </Col>
           </Row>
         </Grid>
